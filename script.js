@@ -53,12 +53,12 @@ function CostCal(){
     let Total = 0
     for (let i = 0; i < Employee.length; i++) {
         Total += Employee[i].salary / 12
-        Total.toFixed(2)
+        
     }
         if (Total < 20000) {
-            $('#Total').text(Total);
+            $('#Total').text(Total.toFixed(2));
         }  else if (Total > 20000){
-            $('#Total').text(Total).css("background", "red")
+            $('#Total').text(Total.toFixed(2)).css("background", "red")
         }
        
 
